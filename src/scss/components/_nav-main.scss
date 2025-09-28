@@ -32,6 +32,7 @@
     position: relative;
     list-style: none;
     margin: 0;
+    top: 40px;
     padding: 0;
     .dropdown-toggle {
       background: none;
@@ -70,11 +71,11 @@
     white-space: nowrap;
   }
   .c-main-menu > li > a {
-    color: $color-secondary;
+    color: #fff;
     display: block;
     font-size: 1rem;
     margin: 0;
-    padding: 41px 20px 41px 1rem;
+    padding: 10px 20px 10px 1rem;
     position: relative;
     &:first-of-type > a {
       padding-left: 0;
@@ -95,7 +96,7 @@
     //   transition: $transition-ease;
     // }
     &:focus {
-      color: #000;
+      color: $color-accent-blue;
     border-radius: var(--radius-md, 8px);
     background-color: #FAFAFA;
     outline: 2px solid $color-primary; // Add a visible focus outline
@@ -103,8 +104,49 @@
     }
     
   }
-  .c-main-menu > li > a:hover {
+
+  .c-main-menu > li.c-menu-btn {
+  position: relative;
+  overflow: hidden;
+  transition: $transition-ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    border-radius: var(--radius-md, 8px);
+    background-image: linear-gradient(172deg, #7AD1FF 11.35%, #00A0F6 93.56%);
+    opacity: 0;
+    transition: opacity 400ms ease;
+    pointer-events: none;
+  }
+
+  a {
+    position: relative;
+    z-index: 1;
+    border: 1px solid $color-accent-blue;
+    border-radius: var(--radius-md, 8px);
+    color: #fff;
+    padding: 10px 20px;
+    line-height: 1;
+    transition: $transition-ease, color 250ms;
+    background: none;
+    text-decoration: none;
+  }
+
+  &:hover::before,
+  a:focus::before {
+    opacity: 1;
+  }
+  &:hover a,
+  a:focus {
     color: #000;
+    text-decoration: none;
+  }
+}
+  .c-main-menu > li > a:hover {
+    color: $color-accent-blue;
     // &::after {
     //   background-color: $color-primary;
     //   transition: $transition-ease;

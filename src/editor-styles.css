@@ -3142,8 +3142,9 @@ html {
 }
 
 body {
-  color: #000;
-  font-family: "Inter", sans-serif;
+  color: #FFF;
+  background-color: #23232C;
+  font-family: "articulat-cf", sans-serif;
   line-height: 1.5;
   -webkit-overflow-scrolling: touch;
 }
@@ -3194,43 +3195,137 @@ blockquote::before {
   margin-right: 0.25rem;
   vertical-align: -0.4rem;
 }*/
-/* ==========================================================================
-   HEADINGS
-   ========================================================================== */
 h1, .h1-style, h2, .h2-style, h3, .h3-style, h4, .h4-style, h5, .h5-style, h6, .h6-style {
-  color: #323232;
-  font-family: "Inter", serif;
-  font-weight: 600;
+  color: #F2F3F7;
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 400;
   line-height: 1.1;
-  margin: 0 0 1rem 0;
+  margin: 0 0 1.5rem 0;
 }
 
 h1 a, .h1-style a, h2 a, .h2-style a, h3 a, .h3-style a, h4 a, .h4-style a, h5 a, .h5-style a, h6 a, .h6-style a {
   text-decoration: none;
 }
 
-h1, .h1-style {
+h1 {
   font-size: clamp(2.81rem, 1.5vw + 2.44rem, 3.75rem);
+  font-weight: 300;
+}
+h1 strong {
+  font-weight: 700;
 }
 
-h2, .h2-style {
-  font-size: clamp(1.88rem, 1vw + 1.63rem, 2.5rem);
+h2 {
+  font-size: clamp(2.19rem, 1.7vw + 1.76rem, 3.25rem);
 }
 
-h3, .h3-style {
-  font-size: clamp(1.75rem, 0.8vw + 1.55rem, 2.25rem);
+h3 {
+  font-size: clamp(1.5rem, 0.6vw + 1.35rem, 1.88rem);
 }
 
-h4, .h4-style {
-  font-size: clamp(1.38rem, 0.8vw + 1.18rem, 1.88rem);
+h4 {
+  font-size: clamp(2rem, 0.8vw + 1.8rem, 2.5rem);
 }
 
-h5, .h5-style {
+h5 {
+  font-size: clamp(1.5rem, 0.4vw + 1.4rem, 1.75rem);
+  margin-bottom: 1.2rem;
+}
+
+h6 {
   font-size: clamp(1.25rem, 0.2vw + 1.2rem, 1.38rem);
 }
 
-h6, .h6-style {
-  font-size: clamp(1rem, 0.2vw + 0.95rem, 1.13rem);
+p:not(.is-style-eyebrow) + h1, p:not(.is-style-eyebrow) + .h1-style, ol + h1, ol + .h1-style, ul + h1, ul + .h1-style,
+p:not(.is-style-eyebrow) + h2, p:not(.is-style-eyebrow) + .h2-style, ol + h2, ol + .h2-style, ul + h2, ul + .h2-style,
+p:not(.is-style-eyebrow) + h3, p:not(.is-style-eyebrow) + .h3-style, ol + h3, ol + .h3-style, ul + h3, ul + .h3-style,
+p:not(.is-style-eyebrow) + h4, p:not(.is-style-eyebrow) + .h4-style, ol + h4, ol + .h4-style, ul + h4, ul + .h4-style,
+p:not(.is-style-eyebrow) + h5, p:not(.is-style-eyebrow) + .h5-style, ol + h5, ol + .h5-style, ul + h5, ul + .h5-style,
+p:not(.is-style-eyebrow) + h6, p:not(.is-style-eyebrow) + .h6-style, ol + h6, ol + .h6-style, ul + h6, ul + .h6-style {
+  margin-top: 2.8rem;
+}
+
+.editor-content .h1-style,
+.h1-style,
+.is-style-h1-style {
+  line-height: 1.1;
+  font-size: clamp(2.19rem, 2.1vw + 1.66rem, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.48px;
+}
+@media (width >= 768px) {
+  .editor-content .h1-style,
+  .h1-style,
+  .is-style-h1-style {
+    font-size: clamp(2.81rem, 1.1vw + 2.54rem, 3.5rem);
+  }
+}
+
+.editor-content .h2-style,
+.h2-style,
+.is-style-h2-style {
+  line-height: 1.1;
+  font-size: clamp(2.19rem, 2.1vw + 1.66rem, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.48px;
+}
+@media (width >= 768px) {
+  .editor-content .h2-style,
+  .h2-style,
+  .is-style-h2-style {
+    font-size: clamp(2.81rem, 1.1vw + 2.54rem, 3.5rem);
+  }
+}
+
+.editor-content .h3-style,
+.h3-style,
+.is-style-h3-style {
+  line-height: 1.1;
+  font-size: clamp(2.38rem, 1vw + 2.13rem, 3rem);
+  letter-spacing: -0.48px;
+  font-weight: 700;
+}
+
+.editor-content .h4-style,
+.h4-style,
+.is-style-h4-style {
+  line-height: 1.1;
+  font-size: clamp(2rem, 0.8vw + 1.8rem, 2.5rem);
+  letter-spacing: -0.48px;
+  font-weight: 700;
+}
+
+.editor-content .h5-style,
+.h5-style,
+.is-style-h5-style {
+  line-height: 1.1;
+  font-size: clamp(1.5rem, 0.3vw + 1.43rem, 1.69rem);
+  letter-spacing: -0.48px;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+.editor-content .h6-style,
+.h6-style,
+.is-style-h6-style {
+  line-height: 1.1;
+  font-size: clamp(1.25rem, 0.2vw + 1.2rem, 1.38rem);
+  letter-spacing: -0.48px;
+  font-weight: 700;
+}
+
+.is-eyebrow, h1.is-eyebrow, .h1-style.is-eyebrow, h2.is-eyebrow, .h2-style.is-eyebrow, h3.is-eyebrow, .h3-style.is-eyebrow, h4.is-eyebrow, .h4-style.is-eyebrow, h5.is-eyebrow, .h5-style.is-eyebrow, h6.is-eyebrow, .h6-style.is-eyebrow, .is-style-eyebrow, span.is-eyebrow {
+  text-transform: uppercase;
+  font-size: 16px !important;
+  color: #7AD1FF;
+  line-height: 1.2;
+  letter-spacing: 4px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+p.is-eyebrow {
+  margin-bottom: 0;
 }
 
 /* ==========================================================================
@@ -3382,6 +3477,8 @@ a[href^="mailto:"] {
    ========================================================================== */
 p {
   line-height: 1.5;
+  font-size: 18px;
+  font-weight: 300;
   margin: 0 0 1rem 0;
   padding: 0;
 }
@@ -6322,8 +6419,34 @@ p {
   width: auto;
 }
 
+.u-stretch-link {
+  position: relative;
+}
+.u-stretch-link p {
+  margin-bottom: 0;
+}
+
+.u-stretch-link a {
+  position: unset !important;
+}
+
+.u-stretch-link a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.u-stretch-link a:is(:hover, :focus) {
+  outline: none;
+}
+
+.block-editor-writing-flow,
+.editor-styles-wrapper {
+  background-color: #23232C;
+}
+
 .is-style-secondaryfont {
-  font-family: "Inter", serif;
+  font-family: "articulat-cf", sans-serif;
 }
 
 .wp-block[data-align=full] .wp-block-group .wp-block {

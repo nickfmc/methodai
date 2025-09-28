@@ -62,4 +62,80 @@ wp.domReady( () => {
 
   // toolset customization
   // wp.blocks.unregisterBlockType( 'toolset-blocks/button' );
+
+  wp.blocks.registerBlockStyle( 'generateblocks/text', [
+  {
+    name: 'h1-style',
+    label: 'H1 Style',
+  }, 
+  {
+    name: 'h2-style',
+    label: 'H2 Style',
+  },
+  {
+    name: 'h3-style',
+    label: 'H3 Style',
+  },
+  {
+    name: 'h4-style',
+    label: 'H4 Style',
+  },
+  {
+    name: 'h5-style',
+    label: 'H5 Style',
+  },
+  {
+    name: 'h6-style',
+    label: 'H6 Style',
+  },
+  {
+    name: 'eyebrow',
+    label: 'Eyebrow Style',
+  }
+
+  ]);
+
+  
+
+  // Register styles for WordPress default heading block
+wp.blocks.registerBlockStyle( 'core/heading', [
+  {
+    name: 'h1-style',
+    label: 'H1 Style',
+  },
+  {
+    name: 'h2-style',
+    label: 'H2 Style',
+  },
+  {
+    name: 'h3-style',
+    label: 'H3 Style',
+  },
+  {
+    name: 'h4-style',
+    label: 'H4 Style',
+  },
+  {
+    name: 'h5-style',
+    label: 'H5 Style',
+  },
+  {
+    name: 'h6-style',
+    label: 'H6 Style',
+  },
+  {
+    name: 'eyebrow',
+    label: 'Eyebrow Style',
+  }
+]);
+
+wp.blocks.registerBlockStyle('core/list', {
+  name: 'checklist',
+  label: 'Checklist'
+});
+
+wp.blocks.registerBlockStyle('core/list', {
+  name: 'two-column-list',
+  label: 'Two Column List'
+});
 } );

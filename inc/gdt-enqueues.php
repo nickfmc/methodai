@@ -17,6 +17,9 @@ function gdt_scripts_and_styles() {
       wp_enqueue_script( 'comment-reply' );
     }
 
+    // register Typekit fonts
+    wp_enqueue_style( 'typekit-fonts', 'https://use.typekit.net/tzt4pnh.css', array(), null );
+
     // register main stylesheets
     $css_file_time = filemtime(get_stylesheet_directory() . '/dist/main.bundle.css');
     wp_register_style( 'gutendev-styles', get_stylesheet_directory_uri() . '/dist/main.bundle.css', array(), $css_file_time, 'all' );
@@ -43,5 +46,7 @@ function gdt_scripts_and_styles() {
     wp_localize_script( 'gutendev-bundle', 'object_name', $translation_array );
   }
 }
+
+add_action( 'wp_enqueue_scripts', 'gdt_scripts_and_styles' );
 
 ?>

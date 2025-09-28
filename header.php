@@ -10,7 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <?php // other html head stuff (before WP/theme scripts are loaded) ------- ?>
-
   <?php wp_head(); // wordpress head functions -- DONOTREMOVE ?>
 
   <?php // START Google Analytics here ?>

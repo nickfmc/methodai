@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "acf/stat-counter",
+  "title": "Stat Counter",
+  "description": "Animated counter with gradient text styling that counts up on scroll into view",
+  "category": "myblocks",
+  "icon": "chart-bar",
+  "keywords": [
+    "stats",
+    "counter",
+    "number",
+    "animated"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "stat-counter.php"
+  },
+  "supports": {
+    "align": ["left", "center", "right", "wide", "full"],
+    "anchor": true
+  },
+  "style": [
+    "file:./stat-counter.css"
+  ],
+  "script": [
+    "file:./stat-counter.js"
+  ]
+}

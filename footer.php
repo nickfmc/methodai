@@ -22,20 +22,7 @@
           <?php if ( is_active_sidebar( 'footer-4' ) ) : ?>
             <?php dynamic_sidebar( 'footer-4' ); ?>
           <?php endif; ?>
-          </div>
-        </div>
-        <!-- /.c-footer-widgets -->
-        
-        <!-- /.c-logo-copy-wrap -->
-      </div>
-      <!-- /.o-wrapper-wide -->
-    </div>
-    <div class="c-page-footer-lower">
-      <div class="o-wrapper-wide">
-        <div class="">
-            <div class="c-copywrite">
-              &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.
-            </div>
+          
             <div class="c-footer-social">
               <a target="_blank" href="https://x.com" aria-label="Visit our X profile">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -61,6 +48,21 @@
               </a>
             </div>
         </div>
+          </div>
+           <div class="c-copywrite">
+              &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.
+            </div>
+        </div>
+        <!-- /.c-footer-widgets -->
+        
+        <!-- /.c-logo-copy-wrap -->
+      </div>
+      <!-- /.o-wrapper-wide -->
+    </div>
+    <div class="c-page-footer-lower">
+      <div class="o-wrapper-wide">
+        <div class="">
+           
       </div>
     </div>
   </footer>
@@ -68,63 +70,7 @@
 
   <?php // get_template_part( 'template-part/navigation/nav-modal' ); ?>
 
-  <!-- Accessibility Widget -->
-  <button class="a11y-widget" id="a11y-widget" aria-label="Accessibility options" aria-expanded="false" aria-controls="a11y-popup">
-    <span class="a11y-widget__icon" aria-hidden="true">
-      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="12" cy="12" r="10"></circle>
-        <path d="M12 8v4"></path>
-        <path d="M12 16h.01"></path>
-      </svg>
-    </span>
-  </button>
-
-  <div class="a11y-popup" id="a11y-popup" aria-hidden="true" inert>
-    <div class="a11y-popup__header">
-      <h3>Accessibility Options</h3>
-      <button id="a11y-close" aria-label="Close accessibility options">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-      </button>
-    </div>
-    
-    <div class="a11y-popup__options">
-      <div class="a11y-popup__option">
-        <label for="a11y-high-contrast">High Contrast</label>
-        <label class="switch">
-          <input type="checkbox" id="a11y-high-contrast">
-          <span class="slider"></span>
-        </label>
-      </div>
-      
-      <div class="a11y-popup__option">
-        <label for="a11y-larger-text">Larger Text</label>
-        <label class="switch">
-          <input type="checkbox" id="a11y-larger-text">
-          <span class="slider"></span>
-        </label>
-      </div>
-      
-      <div class="a11y-popup__option">
-        <label for="a11y-reduced-motion">Reduce Motion</label>
-        <label class="switch">
-          <input type="checkbox" id="a11y-reduced-motion">
-          <span class="slider"></span>
-        </label>
-      </div>
-      
-      <div class="a11y-popup__option">
-        <label for="a11y-focus-visible">Enhanced Focus</label>
-        <label class="switch">
-          <input type="checkbox" id="a11y-focus-visible">
-          <span class="slider"></span>
-        </label>
-      </div>
-    </div>
-  </div>
-  <!-- End Accessibility Widget -->
+ 
 
   <!-- all js scripts are loaded in lib/gdt-enqueues.php -->
   <?php wp_footer(); ?>

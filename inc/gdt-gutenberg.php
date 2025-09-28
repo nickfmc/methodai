@@ -26,6 +26,13 @@ function gdt_customizing_blocks() {
 add_action( 'enqueue_block_editor_assets', 'gdt_customizing_blocks' );
 
 
+// ++ Enqueue Typekit fonts for Gutenberg editor
+function gdt_editor_fonts() {
+  wp_enqueue_style( 'typekit-fonts-editor', 'https://use.typekit.net/tzt4pnh.css', array(), null );
+}
+add_action( 'enqueue_block_editor_assets', 'gdt_editor_fonts' );
+
+
 /**
  * Add a block category for if it doesn't exist already.
  *
@@ -74,6 +81,7 @@ function register_acf_blocks() {
   register_block_type(  get_stylesheet_directory() . '/template-part/block/button/block.json' );
   register_block_type(  get_stylesheet_directory() . '/template-part/block/swiper-material/block.json' );
   register_block_type(  get_stylesheet_directory() . '/template-part/block/swiper-projects/block.json' );
+  register_block_type(  get_stylesheet_directory() . '/template-part/block/stat-counter/block.json' );
 }
 
 add_action( 'init', 'register_acf_blocks', 5 );

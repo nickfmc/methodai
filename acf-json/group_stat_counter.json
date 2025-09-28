@@ -1,0 +1,107 @@
+{
+    "key": "group_stat_counter",
+    "title": "Stat Counter Fields",
+    "fields": [
+        {
+            "key": "field_stat_number",
+            "label": "Stat Number",
+            "name": "stat_number",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Enter the stat number with any prefix or suffix (e.g., '67%+', '$1.7M', '3X')",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "e.g. 67%+, $1.7M, 3X",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_stat_label",
+            "label": "Stat Label",
+            "name": "stat_label",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Enter a descriptive label for this statistic",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "e.g. Success Rate, Revenue Growth, Performance Increase",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_animation_duration",
+            "label": "Animation Duration (ms)",
+            "name": "animation_duration",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "How long the counting animation should take in milliseconds",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 2000,
+            "min": 500,
+            "max": 10000,
+            "step": 100,
+            "placeholder": "",
+            "prepend": "",
+            "append": "ms"
+        },
+        {
+            "key": "field_animation_delay",
+            "label": "Animation Delay (ms)",
+            "name": "animation_delay",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Delay before animation starts after element comes into view",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 0,
+            "min": 0,
+            "max": 5000,
+            "step": 100,
+            "placeholder": "",
+            "prepend": "",
+            "append": "ms"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/stat-counter"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Fields for the Stat Counter block"
+}

@@ -36,6 +36,13 @@
 @import "./scss/utilities/_width-utils.scss";
 @import "./scss/utilities/_misc-utils.scss";
 
+// ++ EDITOR BACKGROUND +++++++++++++++++++++++++++++++++
+// Set dark grey background for Gutenberg editor to match frontend
+.block-editor-writing-flow,
+.editor-styles-wrapper {
+	background-color: $color-dark-gray-blue;
+}
+
 
 .is-style-secondaryfont {
 	font-family: $font-secondary;

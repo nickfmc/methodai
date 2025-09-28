@@ -1,8 +1,8 @@
 
 h1, .h1-style, h2, .h2-style, h3, .h3-style, h4, .h4-style, h5, .h5-style, h6, .h6-style {
-  color: $heading-color;
+  color: #F2F3F7;
   font-family: $font-secondary;
-  font-weight: 700;
+  font-weight: 400;
   line-height: $line-height-tight;
   margin: 0 0 1.5rem 0;
 }
@@ -12,13 +12,17 @@ h1 a, .h1-style a, h2 a, .h2-style a, h3 a, .h3-style a, h4 a, .h4-style a, h5 a
 
 // Base heading styles
 h1 {
-  font-size: clamped(45px, 56px);
+  font-size: clamped(45px, 60px);
+  font-weight: 300;
+  strong {
+    font-weight: 700;
+  }
 }
 h2 {
-  font-size: clamped(45px, 56px);
+  font-size: clamped(35px, 52px);
 }
 h3 {
-  font-size: clamped(38px, 48px);
+  font-size: clamped(24px, 30px);
 }
 h4 {
   font-size: clamped(32px, 40px);
@@ -113,10 +117,11 @@ p:not(.is-style-eyebrow) + h6, p:not(.is-style-eyebrow) + .h6-style, ol + h6, ol
 
 .is-eyebrow, h1.is-eyebrow, .h1-style.is-eyebrow, h2.is-eyebrow, .h2-style.is-eyebrow, h3.is-eyebrow, .h3-style.is-eyebrow, h4.is-eyebrow, .h4-style.is-eyebrow, h5.is-eyebrow, .h5-style.is-eyebrow, h6.is-eyebrow, .h6-style.is-eyebrow, .is-style-eyebrow, span.is-eyebrow {
   text-transform: uppercase;
-  font-size: 19px !important;
+  font-size: 16px !important;
+  color: $color-light-blue;
   line-height: 1.2;
-  letter-spacing: 1.19px;
-  font-weight: 800;
+  letter-spacing: 4px;
+  font-weight: 400;
   margin-bottom: 5px;
 }
 

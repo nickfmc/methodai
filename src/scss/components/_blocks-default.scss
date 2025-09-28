@@ -65,7 +65,7 @@ $paddingHorizontal: 25px;
   }
 }
 
-.editor-content > .gb-container.alignfull, .editor-content > [class^="gb-element-"].alignfull {
+.editor-content > .alignfull, .editor-content > .gb-container.alignfull, .editor-content > [class^="gb-element-"].alignfull {
   padding-left: 25px;
   padding-right: 25px;
   position: relative;

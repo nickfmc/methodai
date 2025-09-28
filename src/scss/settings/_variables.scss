@@ -28,6 +28,12 @@ $color-red:         #A82313;
 $color-primary:       #0f105f; 
 $color-secondary:       #0f2f5f;
 
+$color-accent-blue: #00A0F6;
+$color-light-blue: #7AD1FF;
+$color-navy: #2D2E40;
+$color-dark-gray-blue: #23232C;
+$color-steel-blue: #3A3F58;
+
 $color-gray-light:        #EAEAEA;
 $color-gray-med:        #ACACAC;
 $color-gray-dark:        #323232;
@@ -39,7 +45,7 @@ $color-white:           #FFF;
 // assign colours to variables
 $focus-color:       $color-red;
 $alert-color:       $color-red;
-$text-color:        $color-black;
+$text-color:        $color-white;
 $link-color:        $color-secondary;
 $link-hover:        $color-gray-dark;
 $border-color:      $color-gray-med;
@@ -55,8 +61,9 @@ $logo-size: 300px;
 
 // ++ TYPOGRAPHY +++++++++++++++++++++++++++++++++
 // Fonts
-$font-primary: 'Inter', sans-serif;
-$font-secondary: 'Inter', serif;
+
+$font-primary: 'articulat-cf', sans-serif;
+$font-secondary: 'articulat-cf', sans-serif;
 
 // Spacing
 $line-height-normal: 1.50;
